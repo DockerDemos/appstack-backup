@@ -7,7 +7,7 @@ import datetime
 import subprocess
 import bz2
 
-yamlfile = '/root/.secret/dbdata.yaml'
+yamlfile = '/conf/.creds/dbdata.yaml'
 date = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
 host = os.getenv('DB_PORT_3306_TCP_ADDR', None)
 bakdir = '/var/backup'
